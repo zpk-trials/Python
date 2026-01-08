@@ -111,7 +111,7 @@ The core hypothesis of this solution is that Consistent claims will have a high 
 ---
 # Submitted for Kharagpur Data Science Hackathon 2025.
 ```
-_  __  ____    ____  _   _ 
+ _   __  ____    ____  _   _ 
 | |/ / |  _ \  / ___|| | | |
 | ' /  | | | | \___ \| |_| |
 | . \  | |_| |  ___) |  _  |
@@ -119,3 +119,33 @@ _  __  ____    ____  _   _
 
 ```
 ---
+
+
+
+
+
+
+---
+
+## 4. Coding & Technical Blocks
+To make code look "boxed" and readable, use **Backticks**:
+
+* **Inline Code:** Use single backticks `` `code` `` for variables like `path/to/file`.
+* **Code Blocks with Syntax Highlighting:**
+    Always specify the language (python, bash, json) for better colors:
+    ```python
+    def hello():
+        print("Hello World")
+    ```
+
+---
+
+## 5. Modern "Extra" Features
+### Emojis
+You can use shortcodes like `:rocket:` 🚀 or `:warning:` ⚠️. They are essential for breaking up walls of text and making the README feel modern.
+
+### Badges (The "Professional" Look)
+Add custom status badges using [Shields.io](https://shields.io):
+```markdown
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
