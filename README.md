@@ -160,3 +160,9 @@ Add custom status badges using [Shields.io](https://shields.io):
 $ vfeqcf3v43
 # vewcf4
 ```
+
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `id` | `int` | Unique identifier |
+| `name` | `str` | User name |
