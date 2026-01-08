@@ -110,4 +110,12 @@ The core hypothesis of this solution is that Consistent claims will have a high 
 
 ---
 # Submitted for Kharagpur Data Science Hackathon 2025.
-----
+```
+_  __  ____    ____  _   _ 
+| |/ / |  _ \  / ___|| | | |
+| ' /  | | | | \___ \| |_| |
+| . \  | |_| |  ___) |  _  |
+|_|\_\ |____/  |____/|_| |_|
+
+```
+---
