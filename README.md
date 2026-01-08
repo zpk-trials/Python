@@ -6,48 +6,48 @@ This repository contains the solution for Track A of the Kharagpur Data Science 
 
 Large Language Models often struggle with global consistency over long narratives. This challenge treats narrative consistency as a structured classification problem:
 
--Input: A character, a specific claim/backstory, and the source novel.
+- Input: A character, a specific claim/backstory, and the source novel.
 
--Task: Determine if the claim is consistent (`1`) or inconsistent (`0`) with the book.
+- Task: Determine if the claim is consistent (`1`) or inconsistent (`0`) with the book.
 
--Constraint: The evidence is distributed across long contexts requiring retrieval and semantic matching.
+- Constraint: The evidence is distributed across long contexts requiring retrieval and semantic matching.
 
 ---
 
 ## 🛠️ Approach & Methodology
 
->Our solution utilizes a Retrieval-Based Semantic Consistency approach. Instead of feeding the entire novel into a generative LLM (which is computationally expensive and prone to context-window loss), we use vector embeddings to find semantic alignment between the claim and specific segments of the text.
+Our solution utilizes a Retrieval-Based Semantic Consistency approach. Instead of feeding the entire novel into a generative LLM (which is computationally expensive and prone to context-window loss), we use vector embeddings to find semantic alignment between the claim and specific segments of the text.
 
 **Key Components**
 
-1.Data Ingestion (`pathway`): We utilize Pathway for efficient data handling and table creation from the raw text chunks.
+1. Data Ingestion (`pathway`): We utilize Pathway for efficient data handling and table creation from the raw text chunks.
 
-2.Text Chunking:
+2. Text Chunking:
 The full novels are split into sliding windows of 800 characters. This ensures that the context provided to the embedding model is dense and specific, reducing noise from irrelevant chapters.
 
-3.Vector Embeddings (`sentence-transformers`):
+3. Vector Embeddings (`sentence-transformers`):
 We use the `all-MiniLM-L6-v2` model. This model maps sentences and paragraphs to a 384-dimensional dense vector space.
 
--Query: The character name + the claim (e.g., "Faria. He spent 4 years writing treatises...")
+- Query: The character name + the claim (e.g., "Faria. He spent 4 years writing treatises...")
 
--Corpus: The chunks of the specific novel.
+- Corpus: The chunks of the specific novel.
 
-4.Similarity Scoring & Classification:
+4. Similarity Scoring & Classification:
 
--We calculate the **Cosine Similarity** between the Claim Vector and all Book Chunk Vectors.
+- We calculate the **Cosine Similarity** between the Claim Vector and all Book Chunk Vectors.
 
--We identify the "Best Match" (highest similarity score).
+- We identify the "Best Match" (highest similarity score).
 
--Thresholding: Based on validation against the training set, we established a decision boundary of 0.45.
+- Thresholding: Based on validation against the training set, we established a decision boundary of 0.45.
 
-  -Score > 0.45 $\rightarrow$ **Consistent (1)** (High semantic overlap found).
+  - Score > 0.45 $\rightarrow$ **Consistent (1)** (High semantic overlap found).
 
-  -Score $\le$ 0.45 $\rightarrow$ **Inconsistent (0)** (No sufficient evidence found in text).
+  - Score $\le$ 0.45 $\rightarrow$ **Inconsistent (0)** (No sufficient evidence found in text).
 
 ---
 
 ## 📂 Repository Structure
-'''
+```
 ├── In search of the castaways.txt   # Source Text 1
 ├── The Count of Monte Cristo.txt    # Source Text 2
 ├── final.py                         # Main execution script
@@ -55,7 +55,7 @@ We use the `all-MiniLM-L6-v2` model. This model maps sentences and paragraphs to
 ├── test.csv                         # Input test data
 ├── train.csv                        # Training data (for reference)
 └── README.md                        # Documentation
-'''
+```
 
 
 ---
@@ -72,7 +72,7 @@ Ensure you have Python 3.8+ installed.
 
 Install the required libraries using the provided requirements file:
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
@@ -80,7 +80,7 @@ pip install -r requirements.txt
 
 Execute the main script. This will load the models, process the text files, and generate the predictions.
 
-```
+```bash
 python final.py
 ```
 
