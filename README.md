@@ -44,13 +44,13 @@ Score $\le$ 0.45 $\rightarrow$ Inconsistent (0) (No sufficient evidence found in
 
 📂 Repository Structure
 
-├── In search of the castaways.txt   # Source Text 1
-├── The Count of Monte Cristo.txt    # Source Text 2
-├── final.py                         # Main execution script
-├── requirements.txt                 # Python dependencies
-├── test.csv                         # Input test data
-├── train.csv                        # Training data (for reference)
-└── README.md                        # Documentation
+>├── In search of the castaways.txt   # Source Text 1
+>├── The Count of Monte Cristo.txt    # Source Text 2
+>├── final.py                         # Main execution script
+>├── requirements.txt                 # Python dependencies
+>├── test.csv                         # Input test data
+>├── train.csv                        # Training data (for reference)
+>└── README.md                        # Documentation
 
 
 🚀 Setup and Execution
