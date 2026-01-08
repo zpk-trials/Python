@@ -18,7 +18,7 @@ Large Language Models often struggle with global consistency over long narrative
 
 Our solution utilizes a Retrieval-Based Semantic Consistency approach. Instead of feeding the entire novel into a generative LLM (which is computationally expensive and prone to context-window loss), we use vector embeddings to find semantic alignment between the claim and specific segments of the text.
 
-**Key Components**
+### Key Components
 
 1. Data Ingestion (`pathway`): We utilize Pathway for efficient data handling and table creation from the raw text chunks.
 
@@ -96,18 +96,18 @@ The core hypothesis of this solution is that Consistent claims will have a high 
 
 ---
 ## 📦 Dependencies
-```
--pathway
+- `pathway`
 
--sentence-transformers
+- `sentence-transformers`
 
--pandas
+- `pandas`
 
--numpy
+- `numpy`
 
--torch
+- `torch`
 
--tqdm
-```
+- `tqdm`
 
+---
 # Submitted for Kharagpur Data Science Hackathon 2025.
+----
