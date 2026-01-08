@@ -119,8 +119,9 @@ The core hypothesis of this solution is that Consistent claims will have a high 
 
 ```
 ---
-
+<div style="display: none">
 [//]:| Collaboration | Work |
 [//]:| :--- | :--- |
 [//]:| `id` | `int`|
 [//]:| `name` | `str`|
+</div>
