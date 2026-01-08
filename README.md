@@ -1,100 +1,113 @@
-Kharagpur Data Science Hackathon - Narrative Consistency (Track A)
+# Kharagpur Data Science Hackathon - Narrative Consistency (Track A)
 
 This repository contains the solution for Track A of the Kharagpur Data Science Hackathon. The objective is to determine whether a specific backstory or claim about a character is causally and logically consistent with the events in long-form narratives (The Count of Monte Cristo and In Search of the Castaways).
 
-📌 Problem Statement
+# 📌 Problem Statement
 
 Large Language Models often struggle with global consistency over long narratives. This challenge treats narrative consistency as a structured classification problem:
 
-Input: A character, a specific claim/backstory, and the source novel.
+-Input: A character, a specific claim/backstory, and the source novel.
 
-Task: Determine if the claim is consistent (1) or inconsistent (0) with the book.
+-Task: Determine if the claim is consistent (`1`) or inconsistent (`0`) with the book.
 
-Constraint: The evidence is distributed across long contexts requiring retrieval and semantic matching.
+-Constraint: The evidence is distributed across long contexts requiring retrieval and semantic matching.
 
-🛠️ Approach & Methodology
+---
 
-Our solution utilizes a Retrieval-Based Semantic Consistency approach. Instead of feeding the entire novel into a generative LLM (which is computationally expensive and prone to context-window loss), we use vector embeddings to find semantic alignment between the claim and specific segments of the text.
+# 🛠️ Approach & Methodology
 
-Key Components
+>Our solution utilizes a Retrieval-Based Semantic Consistency approach. Instead of feeding the entire novel into a generative LLM (which is computationally expensive and prone to context-window loss), we use vector embeddings to find semantic alignment between the claim and specific segments of the text.
 
-Data Ingestion (pathway): We utilize Pathway for efficient data handling and table creation from the raw text chunks.
+**Key Components**
 
-Text Chunking:
+1.Data Ingestion (`pathway`): We utilize Pathway for efficient data handling and table creation from the raw text chunks.
+
+2.Text Chunking:
 The full novels are split into sliding windows of 800 characters. This ensures that the context provided to the embedding model is dense and specific, reducing noise from irrelevant chapters.
 
-Vector Embeddings (sentence-transformers):
-We use the all-MiniLM-L6-v2 model. This model maps sentences and paragraphs to a 384-dimensional dense vector space.
+3.Vector Embeddings (`sentence-transformers`):
+We use the `all-MiniLM-L6-v2` model. This model maps sentences and paragraphs to a 384-dimensional dense vector space.
 
-Query: The character name + the claim (e.g., "Faria. He spent 4 years writing treatises...")
+-Query: The character name + the claim (e.g., "Faria. He spent 4 years writing treatises...")
 
-Corpus: The chunks of the specific novel.
+-Corpus: The chunks of the specific novel.
 
-Similarity Scoring & Classification:
+4.Similarity Scoring & Classification:
 
-We calculate the Cosine Similarity between the Claim Vector and all Book Chunk Vectors.
+-We calculate the **Cosine Similarity** between the Claim Vector and all Book Chunk Vectors.
 
-We identify the "Best Match" (highest similarity score).
+-We identify the "Best Match" (highest similarity score).
 
-Thresholding: Based on validation against the training set, we established a decision boundary of 0.45.
+-Thresholding: Based on validation against the training set, we established a decision boundary of 0.45.
 
-Score > 0.45 $\rightarrow$ Consistent (1) (High semantic overlap found).
+  -Score > 0.45 $\rightarrow$ **Consistent (1)** (High semantic overlap found).
 
-Score $\le$ 0.45 $\rightarrow$ Inconsistent (0) (No sufficient evidence found in text).
+  -Score $\le$ 0.45 $\rightarrow$ **Inconsistent (0)** (No sufficient evidence found in text).
 
-📂 Repository Structure
+---
 
->├── In search of the castaways.txt   # Source Text 1
->├── The Count of Monte Cristo.txt    # Source Text 2
->├── final.py                         # Main execution script
->├── requirements.txt                 # Python dependencies
->├── test.csv                         # Input test data
->├── train.csv                        # Training data (for reference)
->└── README.md                        # Documentation
+# 📂 Repository Structure
+'''
+├── In search of the castaways.txt   # Source Text 1
+├── The Count of Monte Cristo.txt    # Source Text 2
+├── final.py                         # Main execution script
+├── requirements.txt                 # Python dependencies
+├── test.csv                         # Input test data
+├── train.csv                        # Training data (for reference)
+└── README.md                        # Documentation
+'''
 
 
-🚀 Setup and Execution
+---
+
+# 🚀 Setup and Execution
 
 To ensure reproducibility in a clean environment, follow these steps:
 
-1. Prerequisites
+**1. Prerequisites**
 
 Ensure you have Python 3.8+ installed.
 
-2. Install Dependencies
+**2. Install Dependencies**
 
 Install the required libraries using the provided requirements file:
 
+```
 pip install -r requirements.txt
+```
 
-
-3. Run the Solution
+**3. Run the Solution**
 
 Execute the main script. This will load the models, process the text files, and generate the predictions.
 
+```
 python final.py
+```
 
+**4. Output**
 
-4. Output
+The script will generate a file named 'results.csv' in the root directory containing the predictions for the test set.
 
-The script will generate a file named results.csv in the root directory containing the predictions for the test set.
+---
 
-📊 Logic & Reasoning
+# 📊 Logic & Reasoning
 
 The core hypothesis of this solution is that Consistent claims will have a high semantic resemblance to at least one specific passage in the book (e.g., a claim about "Faria writing treatises" will vector-match closely with the book paragraph describing Faria's writing). Inconsistent claims will either be hallucinations or direct contradictions, resulting in low similarity scores across all chunks.
 
+---
 ## 📦 Dependencies
+```
+-pathway
 
-pathway
+-sentence-transformers
 
-sentence-transformers
+-pandas
 
-pandas
+-numpy
 
-numpy
+-torch
 
-torch
+-tqdm
+```
 
-tqdm
-
-Submitted for Kharagpur Data Science Hackathon 2025.
+# Submitted for Kharagpur Data Science Hackathon 2025.
