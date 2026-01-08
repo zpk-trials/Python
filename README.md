@@ -2,7 +2,7 @@
 
 This repository contains the solution for Track A of the Kharagpur Data Science Hackathon. The objective is to determine whether a specific backstory or claim about a character is causally and logically consistent with the events in long-form narratives (The Count of Monte Cristo and In Search of the Castaways).
 
-# 📌 Problem Statement
+## 📌 Problem Statement
 
 Large Language Models often struggle with global consistency over long narratives. This challenge treats narrative consistency as a structured classification problem:
 
@@ -14,7 +14,7 @@ Large Language Models often struggle with global consistency over long narrative
 
 ---
 
-# 🛠️ Approach & Methodology
+## 🛠️ Approach & Methodology
 
 >Our solution utilizes a Retrieval-Based Semantic Consistency approach. Instead of feeding the entire novel into a generative LLM (which is computationally expensive and prone to context-window loss), we use vector embeddings to find semantic alignment between the claim and specific segments of the text.
 
@@ -46,7 +46,7 @@ We use the `all-MiniLM-L6-v2` model. This model maps sentences and paragraphs to
 
 ---
 
-# 📂 Repository Structure
+## 📂 Repository Structure
 '''
 ├── In search of the castaways.txt   # Source Text 1
 ├── The Count of Monte Cristo.txt    # Source Text 2
@@ -60,7 +60,7 @@ We use the `all-MiniLM-L6-v2` model. This model maps sentences and paragraphs to
 
 ---
 
-# 🚀 Setup and Execution
+## 🚀 Setup and Execution
 
 To ensure reproducibility in a clean environment, follow these steps:
 
@@ -90,7 +90,7 @@ The script will generate a file named 'results.csv' in the root directory contai
 
 ---
 
-# 📊 Logic & Reasoning
+## 📊 Logic & Reasoning
 
 The core hypothesis of this solution is that Consistent claims will have a high semantic resemblance to at least one specific passage in the book (e.g., a claim about "Faria writing treatises" will vector-match closely with the book paragraph describing Faria's writing). Inconsistent claims will either be hallucinations or direct contradictions, resulting in low similarity scores across all chunks.
 
