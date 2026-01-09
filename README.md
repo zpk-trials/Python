@@ -76,7 +76,7 @@ We adopt an evidence-grounded retrieval pipeline:
 <details>
    <summary><b>📂 Repository Structure</b></summary>
    
-```
+
 ├── final.py  
 ├── train.csv  
 ├── test.csv  
@@ -84,7 +84,7 @@ We adopt an evidence-grounded retrieval pipeline:
 ├── The Count of Monte Cristo.txt  
 ├── results.csv  
 └── README.md  
-```
+
 
 </details>
 ---
