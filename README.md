@@ -75,6 +75,7 @@ We adopt an evidence-grounded retrieval pipeline:
 
 <details>
    <summary><b><H3>📂 Repository Structure</H3></b></summary>  
+&ensp;<b>└── README.md</b>
  <details>
     <summary><b>└── Code </b></summary>
 &emsp;   ├── final.py<br>
@@ -84,8 +85,6 @@ We adopt an evidence-grounded retrieval pipeline:
 &emsp;   ├── The Count of Monte Cristo.txt  <br>
 &emsp;   └── results.csv  <br>
  </details>
-&ensp; |<br>
-&ensp;<b>└── README.md</b>
 
 
 </details>
