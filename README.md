@@ -73,7 +73,7 @@ We adopt an evidence-grounded retrieval pipeline:
 
 ---
 
-<details>
+# <details>
    <summary><b>📂 Repository Structure</b></summary>  
  <details>
     <summary><b>└── Code </b></summary>
@@ -84,7 +84,7 @@ We adopt an evidence-grounded retrieval pipeline:
      ├── The Count of Monte Cristo.txt  
      └── results.csv  
  </details>
-&ensp└── README.md  
+&ensp;└── README.md  
 
 
 </details>
