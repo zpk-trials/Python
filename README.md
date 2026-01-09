@@ -74,8 +74,8 @@ We adopt an evidence-grounded retrieval pipeline:
 ---
 
 <details>
-   <summary><b><H3>📂 Repository Structure</H3></b></summary> 
-&emsp;&ensp;•<br>
+   <summary><b>📂 Repository Structure</b></summary> 
+&emsp;&nbsp;•<br>
 &emsp;<b>└── README.md</b>
  <details>
     <summary><b>└── Code </b></summary>
