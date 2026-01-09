@@ -77,15 +77,15 @@ We adopt an evidence-grounded retrieval pipeline:
    <summary><b><H3>📂 Repository Structure</H3></b></summary>  
  <details>
     <summary><b>└── Code </b></summary>
-&emsp;├── final.py<br>
-&emsp;├── train.csv<br>
-&emsp;├── test.csv<br>
-&emsp;├── In search of the castaways.txt<br>
-&emsp;├── The Count of Monte Cristo.txt  <br>
-&emsp;└── results.csv  <br>
+&emsp;   ├── final.py<br>
+&emsp;   ├── train.csv<br>
+&emsp;   ├── test.csv<br>
+&emsp;   ├── In search of the castaways.txt<br>
+&emsp;   ├── The Count of Monte Cristo.txt  <br>
+&emsp;   └── results.csv  <br>
  </details>
-&ensp;|<br>
-&ensp;└── README.md  
+&ensp; |<br>
+&ensp;<b>└── README.md</b>
 
 
 </details>
