@@ -75,6 +75,7 @@ We adopt an evidence-grounded retrieval pipeline:
 
 <details>
    <summary><b>📂 Repository Structure</b></summary>
+   
 ```
 ├── final.py  
 ├── train.csv  
@@ -84,6 +85,7 @@ We adopt an evidence-grounded retrieval pipeline:
 ├── results.csv  
 └── README.md  
 ```
+
 </details>
 ---
 
