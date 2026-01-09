@@ -77,22 +77,19 @@ We adopt an evidence-grounded retrieval pipeline:
   <summary style="list-style: none; cursor:pointer; display: inline;">
      <b>
         <h2 style="display: inline;">
-           📂 Repository Structure
+           📂 Repository Structure(Click to view)
         </h2>
      </b>
   </summary> 
 &emsp;&nbsp;•<br>
-&emsp;<b>└── README.md</b>
- <details>
-    <summary><b>└── Code </b></summary>
+&emsp;<b>└── README.md</b><br>
+&emsp;<b>└── Code </b><br>
 &emsp;&emsp;&emsp;&emsp;├── final.py<br>
 &emsp;&emsp;&emsp;&emsp;├── train.csv<br>
 &emsp;&emsp;&emsp;&emsp;├── test.csv<br>
 &emsp;&emsp;&emsp;&emsp;├── In search of the castaways.txt<br>
 &emsp;&emsp;&emsp;&emsp;├── The Count of Monte Cristo.txt  <br>
 &emsp;&emsp;&emsp;&emsp;└── results.csv  <br>
- </details>
-
 
 </details>
 ---
@@ -143,8 +140,10 @@ Hackathon: Kharagpur Data Science Hackathon 2025
 
 </details>
 
+---
+
 <details>
-   <summary><b>The One In Detail (Choice - B)</summary>
+   <summary><b>The One In Detail (Choice - B)</b></summary>
 
 # Kharagpur Data Science Hackathon - Narrative Consistency (Track A)
 
