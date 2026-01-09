@@ -133,10 +133,13 @@ Hackathon: Kharagpur Data Science Hackathon 2025
 
 | Team-mates | Contributions |
 | :--- | :--- |
-| Vinayak Dhiman | int |
-| Shaurya Swaraj | str |
-| Diksha Jangra | float |
-| Pritham Prajwin V | Double |
+| Vinayak Dhiman | GitHub Maintainance & Organizing work |
+| Shaurya Swaraj | Coding Logic & Use of modules |
+| Diksha Jangra | Report Preparation, README generation and Value Adding |
+| Pritham Prajwin V | Final Conclusion & Team Maintanance |
+
+We Thank `Kharagpur Data Science Hackathon (KDSH)` YEAR: 2026 to provide us the Excellent Oppurtunity for expressing our Ideas with the Logical using of the Most valueable, powerful & useful LLM `pathway`
+We hope that this README helps a Lot for Both Beginners to Enhance and for the Professionals to Glance out the Features of this Hack-a-Thon!!
 
 </details>
 
@@ -267,6 +270,20 @@ The core hypothesis of this solution is that Consistent claims will have a high 
 |_|\_\ |____/  |____/|_| |_|
 
 ```
+
+| Team-mates | Contributions |
+| :--- | :--- |
+| Vinayak Dhiman | GitHub Maintainance & Organizing work |
+| Shaurya Swaraj | Coding Logic & Use of modules |
+| Diksha Jangra | Report Preparation, README generation and Value Adding |
+| Pritham Prajwin V | Final Conclusion & Team Maintanance |
+
+We Thank `Kharagpur Data Science Hackathon (KDSH)` YEAR: 2026 to provide us the Excellent Oppurtunity for expressing our Ideas with the Logical using of the Most valueable, powerful & useful LLM `pathway`
+We hope that this README helps a Lot for Both Beginners to Enhance and for the Professionals to Glance out the Features of this Hack-a-Thon!!
+
+
 ---
 
 </details>
+
+
