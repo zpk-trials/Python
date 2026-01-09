@@ -1,5 +1,5 @@
 <details>
-   <summary><b>The Minimal Version Best for Hack-a-Thons</b></summary>
+   <summary><b>The Minimal Version Best for Hack-a-Thon (Choice - A)</b></summary>
 
 # Kharagpur Data Science Hackathon (KDSH) – Track A
 
@@ -134,7 +134,7 @@ Hackathon: Kharagpur Data Science Hackathon 2025
 </details>
 
 <details>
-   <summary><b>The One In Detail for Beginners</summary>
+   <summary><b>The One In Detail (Choice - B)</summary>
 
 # Kharagpur Data Science Hackathon - Narrative Consistency (Track A)
 
