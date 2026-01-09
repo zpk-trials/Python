@@ -120,16 +120,21 @@ Inconsistent claims lack sufficient semantic evidence or contradict the narrativ
 
 ## 🏁 Submission
 
-Track: A  
-Hackathon: Kharagpur Data Science Hackathon 2025
+### Track: A  
+
+**Hackathon: Kharagpur Data Science Hackathon 2025**
 
 ```
- _   __  ____    ____  _   _
-| |/ / |  _ \  / ___|| | | |
-| ' /  | | | | \___ \| |_| |
-| . \  | |_| |  ___) |  _  |
-|_|\_\ |____/  |____/|_| |_|
+◤                         ◥            ***     ***
+ _   __  ____    ____  _   _          **   ** **   ** 
+| |/ / |  _ \  / ___|| | | |         **     ***     **
+| ' /  | | | | \___ \| |_| |          **           **
+| . \  | |_| |  ___) |  _  |            **       **
+|_|\_\ |____/  |____/|_| |_|              **   **
+◣                         ◢                 *
+
 ```
+<br>
 
 | Team-mates | Contributions |
 | :--- | :--- |
@@ -263,13 +268,16 @@ The core hypothesis of this solution is that Consistent claims will have a high 
 ---
 # Submitted for Kharagpur Data Science Hackathon 2025.
 ```
- _   __  ____    ____  _   _ 
-| |/ / |  _ \  / ___|| | | |
-| ' /  | | | | \___ \| |_| |
-| . \  | |_| |  ___) |  _  |
-|_|\_\ |____/  |____/|_| |_|
+◤                         ◥            ***     ***
+ _   __  ____    ____  _   _          **   ** **   ** 
+| |/ / |  _ \  / ___|| | | |         **     ***     **
+| ' /  | | | | \___ \| |_| |          **           **
+| . \  | |_| |  ___) |  _  |            **       **
+|_|\_\ |____/  |____/|_| |_|              **   **
+◣                         ◢                 *
 
 ```
+<br>
 
 | Team-mates | Contributions |
 | :--- | :--- |
@@ -280,8 +288,6 @@ The core hypothesis of this solution is that Consistent claims will have a high 
 
 We Thank `Kharagpur Data Science Hackathon (KDSH)` YEAR: 2026 to provide us the Excellent Oppurtunity for expressing our Ideas with the Logical using of the Most valueable, powerful & useful LLM `pathway`
 We hope that this README helps a Lot for Both Beginners to Enhance and for the Professionals to Glance out the Features of this Hack-a-Thon!!
-
-
 ---
 
 </details>
