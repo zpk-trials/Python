@@ -1,9 +1,8 @@
-# 🧠 Narrative Consistency Verification  
-### Kharagpur Data Science Hackathon (KDSH) – Track A
+# Kharagpur Data Science Hackathon (KDSH) – Track A
 
 > **Task:** Verify whether a character backstory claim is logically and causally consistent with long-form literary narratives.
 
-This repository presents a retrieval-based semantic consistency solution for **Track A of KDSH**, addressing global consistency challenges in long novels such as *The Count of Monte Cristo* and *In Search of the Castaways*.
+This repository presents a retrieval-based semantic consistency solution for **Track A of the Kharagpur Data Science Hackathon (KDSH)**, addressing global consistency challenges in long novels such as *The Count of Monte Cristo* and *In Search of the Castaways*.
 
 ---
 
@@ -12,12 +11,12 @@ This repository presents a retrieval-based semantic consistency solution for **T
 Large Language Models often fail to maintain global narrative consistency over long texts.  
 This challenge reframes narrative understanding as a **binary classification problem**.
 
-**Input**
+### Input
 - Character name  
 - Backstory / claim  
 - Source novel  
 
-**Output**
+### Output
 - `1` → Consistent  
 - `0` → Inconsistent  
 
@@ -36,23 +35,23 @@ We adopt an evidence-grounded retrieval pipeline:
    Structured ingestion of text chunks and claims using the Pathway framework.
 
 3. **Semantic Embeddings**  
-   - Model: `all-MiniLM-L6-v2` (384-dim)  
-   - Claim embedding = *Character + Backstory*  
+   - Model: all-MiniLM-L6-v2 (384-dimensional)  
+   - Claim embedding = Character + Backstory  
    - Corpus = novel text chunks  
 
 4. **Similarity-Based Reasoning**  
    Cosine similarity is computed between claims and all chunks, selecting the best-matching evidence.
 
 5. **Decision Rule (Validated Threshold)**  
-   - Similarity **> 0.45 → Consistent (1)**  
-   - Similarity **≤ 0.45 → Inconsistent (0)**  
+   - Similarity > 0.45 → Consistent (1)  
+   - Similarity ≤ 0.45 → Inconsistent (0)
 
 ---
 
 ## 🧩 Why This Works
 
 - Scales to long narratives  
-- Avoids LLM context-window limits  
+- Avoids LLM context-window limitations  
 - Evidence-driven and interpretable  
 - Computationally efficient  
 - Fully compliant with hackathon constraints  
@@ -63,12 +62,68 @@ We adopt an evidence-grounded retrieval pipeline:
 
 - Python  
 - Pathway Framework  
-- SentenceTransformers (`all-MiniLM-L6-v2`)  
+- SentenceTransformers (all-MiniLM-L6-v2)  
 - PyTorch  
-- NumPy, Pandas  
+- NumPy  
+- Pandas  
 - tqdm  
 
 ---
 
 ## 📂 Repository Structure
+```
+├── final.py  
+├── train.csv  
+├── test.csv  
+├── In search of the castaways.txt  
+├── The Count of Monte Cristo.txt  
+├── results.csv  
+└── README.md  
+```
+---
 
+## ▶️ Quick Start
+
+Install dependencies  
+```bash
+pip install -r requirements.txt
+```
+
+Run the solution  
+```bash
+python final.py
+```
+
+**Output:**  
+Generates `results.csv` containing binary consistency predictions.
+
+---
+
+## 🧪 Core Insight
+
+Consistent claims exhibit strong semantic alignment with at least one specific passage in the novel.  
+Inconsistent claims lack sufficient semantic evidence or contradict the narrative.
+
+---
+
+## 🏁 Submission
+
+Track: A  
+Hackathon: Kharagpur Data Science Hackathon 2025
+
+```
+ _   __  ____    ____  _   _
+| |/ / |  _ \  / ___|| | | |
+| ' /  | | | | \___ \| |_| |
+| . \  | |_| |  ___) |  _  |
+|_|\_\ |____/  |____/|_| |_|
+```
+
+| Team-mates | Contributions |
+| :--- | :--- |
+| Vinayak Dhiman | int |
+| Shaurya Swaraj | str |
+| Diksha Jangra | float |
+| Ptirham Prajwin V | Double |
+
+Check
