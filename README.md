@@ -73,8 +73,8 @@ We adopt an evidence-grounded retrieval pipeline:
 
 ---
 
-# <details>
-   <summary><b>📂 Repository Structure</b></summary>  
+<details>
+   <summary><b><H2>📂 Repository Structure</H2></b></summary>  
  <details>
     <summary><b>└── Code </b></summary>
      ├── final.py  
